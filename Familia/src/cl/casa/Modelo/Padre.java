@@ -51,13 +51,14 @@ public class Padre extends Persona {
 		}
 
 	}
-
 	public Boolean teSacoLaCTM(Boolean vicio) {
 
 		if (vicio == true) {
+			System.out.println("Ven pa aca ctm te toca paliza");
 			return true;
 
 		} else {
+			System.out.println("Te salvaste esta noche");
 			return false;
 		}
 

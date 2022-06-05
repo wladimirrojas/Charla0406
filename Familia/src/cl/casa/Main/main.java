@@ -17,7 +17,10 @@ public class main {
 		Madre madre = new Madre();
 		Padre padre = new Padre();
 		Hijo hijo = new Hijo();
-
+		Integer opcion = 1;
+		
+		do {
+		//SIEMPRE VA A PASAR UNA VEZ EL DO
 		System.out.println("Ingrese el Boolean del vicio padre");
 
 		padre.setVicio(sc.nextBoolean());
@@ -40,10 +43,13 @@ public class main {
 		padre.agradecidoComida("Hombre");
 		padre.teSacoLaCTM(padre.getVicio());
 		
-		
 		hijo.agradecidoComida("Hombre");
 		hijo.estudiar(true);
-
+		
+		//PARA CONFIRMAR SI CONTINUAR O SALIR
+		System.out.println("Opcion 1. Continuar, opcion 0. Salir.");
+		opcion = Integer.parseInt(sc.nextLine());
+		//VALIDAD LA CONDICION PARA CONTINUAR O SALIR
+		} while (opcion != 0);
 	}
-
 }
